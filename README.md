@@ -27,7 +27,7 @@ $ ./doc.sh install
 
 ## Usage
 
-Editing:
+### Basic editing
 
 - Open `bash` or on Windows `git-bash`
 - Change to the repository's root directory
@@ -39,6 +39,9 @@ $ code .
 
 The sources of your notebook are located in folder `doc`.
 You edit them with Visual Studio Code.
+
+### Editing with live preview
+
 Sphinx scans for file changes and rebuild automatically the output.
 You have a live preview in your browser.
 
@@ -49,3 +52,14 @@ $ ./doc.sh preview
 ```
 
 Check the bash window for build success, errors and warnings regularily.
+
+### Make your day
+
+Right before you begin your work you add a new day to the sources.
+
+- You change to the repository's root folder and call:
+
+``` bash
+$ ./doc.sh make-my-day
+```
+
