@@ -70,11 +70,14 @@ $ ./doc.sh make-my-day
 
 ## Authoring as code you'll love
 
-### Adding screenshots
+### Working with screenshots
 
 TODO: Describe it.
 
-### Adding draw.io diagrams
+### Working with  draw.io diagrams
 
 TODO: Describe it.
 
+### Working with PlantUML diagrams
+
+TODO: Describe it.

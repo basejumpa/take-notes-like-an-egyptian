@@ -4,4 +4,10 @@
     "pasteImage.prefix": ".. figure:: ",
 
     "hediet.vscode-drawio.online-url": "",
+
+    "plantuml.jar": ".venv/plantuml.jar",
+    "plantuml.lintDiagramNoName": false,
+    "plantuml.jarArgs": [
+        // "-config", "doc/plantuml.config" // Commented out because it doesn't work. Aborted my tryings...
+    ],
 }

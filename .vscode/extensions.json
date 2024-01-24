@@ -1,6 +1,7 @@
 {
     "recommendations": [
         "dendron.dendron-paste-image",
-        "hediet.vscode-drawio"
+        "hediet.vscode-drawio",
+        "jebbs.plantuml"
     ]
 }
