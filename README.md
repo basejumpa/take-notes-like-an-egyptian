@@ -25,9 +25,14 @@ For the installation step a internet connection is necessary.
 $ ./doc.sh install
 ```
 
-## Usage
+When you open the directory in Visual Studio Code the very first time
+you get prompted for installation of recommended extensions. 
 
-### Basic editing
+Install those extensions.
+
+## Basic Usage
+
+### Editing
 
 - Open `bash` or on Windows `git-bash`
 - Change to the repository's root directory
@@ -62,4 +67,10 @@ Right before you begin your work you add a new day to the sources.
 ``` bash
 $ ./doc.sh make-my-day
 ```
+
+## Authoring as code you'll love
+
+### Adding screenshots
+
+TODO: Describe it.
 
