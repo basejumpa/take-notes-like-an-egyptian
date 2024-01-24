@@ -7,12 +7,12 @@
 ## Prerequisites
 
 - Operating System: Linux, MacOS or Windows
-- Installed Software
+- Visual Studio Code
+- Webbrowser
+- draw.io
 - git
 - Python
 - Java
-- Visual Studio Code
-- draw.io
 
 For the installation step a internet connection is necessary.
 
@@ -22,5 +22,30 @@ For the installation step a internet connection is necessary.
 - Change to the repository's root directory
 
 ``` bash
-$ ./install.sh
+$ ./doc.sh install
 ```
+
+## Usage
+
+Editing:
+
+- Open `bash` or on Windows `git-bash`
+- Change to the repository's root directory
+- Open the repository folder with Visual Studio code:
+
+``` bash
+$ code .
+```
+
+The sources of your notebook are located in folder `doc`.
+You edit them with Visual Studio Code.
+Sphinx scans for file changes and rebuild automatically the output.
+You have a live preview in your browser.
+
+- Start live preview:
+
+``` bash
+$ ./doc.sh preview
+```
+
+Check the bash window for build success, errors and warnings regularily.
