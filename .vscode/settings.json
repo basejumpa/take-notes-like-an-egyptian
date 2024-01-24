@@ -2,4 +2,6 @@
     "pasteImage.encodePath": "none",
     "pasteImage.path": "${currentFileDir}/_figures",
     "pasteImage.prefix": ".. figure:: ",
+
+    "hediet.vscode-drawio.online-url": "",
 }

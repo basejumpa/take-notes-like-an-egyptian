@@ -33,4 +33,18 @@ html_theme_options = {
     "globaltoc_includehidden" : "true",
 }
 
+### EXTENSIONS AND THEIR SETTINGS #############################################
+
+# Ordered list. Order: Most general first, then for more and more special usescases
+
+extensions = []
+
+### Draw diagrams with "draw.io" ##############################################
+# @see https://pypi.org/project/sphinxcontrib-drawio/
+
+extensions.append("sphinxcontrib.drawio")
+
+# Prevent from nasty console flickering
+drawio_disable_verbose_electron = True
+
 ### EOF #######################################################################

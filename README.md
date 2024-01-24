@@ -74,3 +74,7 @@ $ ./doc.sh make-my-day
 
 TODO: Describe it.
 
+### Adding draw.io diagrams
+
+TODO: Describe it.
+

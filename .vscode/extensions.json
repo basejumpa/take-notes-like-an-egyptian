@@ -1,5 +1,6 @@
 {
     "recommendations": [
-        "dendron.dendron-paste-image"
+        "dendron.dendron-paste-image",
+        "hediet.vscode-drawio"
     ]
 }
