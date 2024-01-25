@@ -13,4 +13,3 @@ sphinxcontrib-plantuml = "*"
 sphinx-autobuild = "*"
 
 [requires]
-python_version = "3.12"
