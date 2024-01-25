@@ -2,6 +2,7 @@
     "recommendations": [
         "dendron.dendron-paste-image",
         "hediet.vscode-drawio",
-        "jebbs.plantuml"
+        "jebbs.plantuml",
+        "mhutchie.git-graph"
     ]
 }
