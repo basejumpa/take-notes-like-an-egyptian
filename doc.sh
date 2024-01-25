@@ -29,15 +29,15 @@ function usage(){
 }
 
 function install() {
-    pip install -r requirements.txt
+    python -m pip install -r requirements.txt
     rm -rf .venv
     mkdir .venv
-    pipenv install --no-site-packages --dev
+    python -m pipenv install --no-site-packages --dev
     curl -o .venv/plantuml.jar https://github.com/plantuml/plantuml/releases/download/v1.2023.13/plantuml-1.2023.13.jar
 }
 
 function preview() {
-    pipenv run sphinx-autobuild doc build/html --port 1440 --open-browser
+    python -m pipenv run sphinx-autobuild doc build/html --port 1440 --open-browser
 }
 
 function make-my-day() {
