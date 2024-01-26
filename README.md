@@ -4,15 +4,23 @@
 - Use Visual Studio Code as your typewriter.
 - Use Sphinx ecosystem as "digital printshop".
 
+- Works on Operating System: Linux, MacOS or Windows
+- Works in Github Workspaces
+
 ## Prerequisites
 
-- Operating System: Linux, MacOS or Windows
 - Visual Studio Code
-- Webbrowser
-- draw.io
 - git
 - Python
 - Java
+- Webbrowser
+
+## Optional Prerequisites
+
+- draw.io (recommended),
+- Inkscape (recommended)
+
+The prerequisites need to be in the path, so callable from any directory.
 
 For the installation step a internet connection is necessary.
 
