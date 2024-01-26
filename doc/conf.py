@@ -58,7 +58,7 @@ extensions.append("sphinxcontrib.drawio")
 drawio_disable_verbose_electron = True
 
 
-### Embedd diagrams as code in plantuml language with "plantuml" #############
+### Embed diagrams as code in plantuml language with "plantuml" #############
 # @see https://github.com/sphinx-contrib/plantuml
 
 extensions.append("sphinxcontrib.plantuml")
@@ -69,5 +69,16 @@ _plantuml_config_file="plantuml.config"
 plantuml = f"java -jar {_conf_location}/../.venv/plantuml.jar -config {_conf_location}/{_plantuml_config_file}"
 
 plantuml_output_format = "svg"
+
+### Create hyperlinks to issues  ##############################################
+# @see https://www.sphinx-doc.org/en/master/usage/extensions/extlinks.html
+
+extensions.append("sphinx.ext.extlinks")
+
+extlinks = {
+    'issue': ('https://jira.mycompany.com/browse/%s','%s'),
+}
+
+extlinks_detect_hardcoded_links = True
 
 ### EOF #######################################################################

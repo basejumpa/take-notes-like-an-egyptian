@@ -81,3 +81,7 @@ TODO: Describe it.
 ### Working with PlantUML diagrams
 
 TODO: Describe it.
+
+### Working with Ticket-System
+
+TODO: Describe the slick ticket browsing

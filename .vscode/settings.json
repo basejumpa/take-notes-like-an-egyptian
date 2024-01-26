@@ -10,4 +10,12 @@
     "plantuml.jarArgs": [
         // "-config", "doc/plantuml.config" // Commented out because it doesn't work. Aborted my tryings...
     ],
+
+    "patternlinks.rules": [
+        {
+            // Example URL: https://jira.mycompany.com/browse/PROJECTX-4711
+            "linkPattern": "(?:\\s|`)((?:PROJECTX|PROJECTY|PROJECTZ)-(?:\\d+))",
+            "linkTarget": "https://jira.mycompany.com/browse/$1"
+        },
+      ],
 }

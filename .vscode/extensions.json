@@ -12,5 +12,7 @@
         // View a Git Graph of your repository, and perform Git actions from the graph
         "mhutchie.git-graph",
 
+        // Automatically turn text into links based upon regex patterns.
+        "danlevett.pattern-links"
     ]
 }
