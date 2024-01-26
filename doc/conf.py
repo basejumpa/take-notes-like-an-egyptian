@@ -20,20 +20,27 @@ numfig = True
 
 html_theme = "sphinx_material"
 
-html_sidebars = {
-    "**": ["logo-text.html", "globaltoc.html", "localtoc.html", "searchbox.html"]
-}
+# The theme settings are theme specific. So wrap their settings into if-clauses for easy
+# switching of themes.
+if html_theme == "sphinx_material":
 
-html_theme_options = {
-    "nav_title" : f"{project} Documentation",
+    html_theme_options = {
+        "nav_title" : f"{project} Documentation",
 
-    "color_primary" : "teal",
-    "color_accent"  : "orange",
+        "color_primary" : "teal",
+        "color_accent"  : "orange",
 
-    "globaltoc_depth"         : 3,
-    "globaltoc_collapse"      : "true",
-    "globaltoc_includehidden" : "true",
-}
+        "globaltoc_depth"         : 3,
+        "globaltoc_collapse"      : "true",
+        "globaltoc_includehidden" : "true",
+    }
+    
+    html_sidebars = {
+        "**": ["logo-text.html", "globaltoc.html", "localtoc.html", "searchbox.html"]
+    }
+    
+else:
+    pass
 
 ### EXTENSIONS AND THEIR SETTINGS #############################################
 
