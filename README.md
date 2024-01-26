@@ -93,3 +93,8 @@ TODO: Describe it.
 ### Working with Ticket-System
 
 TODO: Describe the slick ticket browsing
+
+### Keep overview with many open VS-Codes
+
+TODO: Describe the extension.
+
