@@ -8,6 +8,7 @@ sphinx = "*"
 sphinx-material = "*"
 sphinxcontrib-drawio = "*"
 sphinxcontrib-plantuml = "*"
+sphinxcontrib-svg2pdfconverter = "*"
 
 [dev-packages]
 sphinx-autobuild = "*"

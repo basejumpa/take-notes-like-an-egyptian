@@ -81,4 +81,11 @@ extlinks = {
 
 extlinks_detect_hardcoded_links = True
 
+### Make use of Inkscape for PDF output work  #################################
+# @see https://pypi.org/project/sphinxcontrib-svg2pdfconverter/
+
+extensions.append("sphinxcontrib.inkscapeconverter")
+
+# 
+
 ### EOF #######################################################################
