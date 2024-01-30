@@ -41,7 +41,7 @@ function preview() {
 }
 
 function make-my-day() {
-    dir_doc_root_path='./doc'
+    dir_doc_root_path='./doc/dairy'
 
     file_name='index'
     file_extension='rst'
@@ -70,7 +70,7 @@ function make-my-day() {
     date_with_month=$(date +"%Y-%b-%d")
     weekday_name_full=$(date +"%A")
 
-    cd $dir_doc_root_path
+    pushd $dir_doc_root_path > /dev/null
 
     # Create day if not exist
     create_day () {
@@ -91,11 +91,11 @@ function make-my-day() {
             echo $underline >> $file_day_relpath
             (echo ; echo) >> $file_day_relpath
 
-            echo "info: Create file $file_day_relpath ... done."
+            echo "info: Create file $dir_doc_root_path/$file_day_relpath ... done."
 
             echo "    $day/$file_name" >> $file_week_relpath
         else
-            echo "info: File $file_day_relpath already exists. Skip creation."
+            echo "info: File $dir_doc_root_path/$file_day_relpath already exists. Skip creation."
         fi
 
         mkdir -p $dir_day_relpath/_figures
@@ -129,7 +129,7 @@ function make-my-day() {
         done
 
 
-        echo "info: Rewrite file $file_week_relpath "
+        echo "info: Rewrite file $dir_doc_root_path/$file_week_relpath "
     }
 
     rewrite_week
@@ -159,13 +159,13 @@ function make-my-day() {
         done
 
 
-        echo "info: Rewrite file $file_year_relpath "
+        echo "info: Rewrite file $dir_doc_root_path/$file_year_relpath "
     }
     rewrite_year
 
     rewrite_entry () {
 
-        heading="$(git config --get user.name)'s notebook"
+        heading="Daily Notes"
 
         underline=""
         i=0
@@ -192,7 +192,7 @@ function make-my-day() {
     }
     rewrite_entry
 
-    cd ..
+    popd >/dev/null  # relates to pushd $dir_doc_root_path
 
     # At codespace skip subsequent actions. Use the username as indicator for that.
     if [ "$USER" = "codespace" ]; then
@@ -205,9 +205,10 @@ function make-my-day() {
     fi
 
     # Open VS code
-    echo "info: Open vscode and go to file $dir_doc_root_path//$file_day_relpath"
+    file_to_open_in_ide="$dir_doc_root_path/$file_day_relpath"
+    echo "info: Open vscode and go to file $file_to_open_in_ide"
     # echo "TODO: Adapt manually .vscode/settings.json to make esbonio use this week as source folder:  $dir_week_relpath"
-    code . --goto $dir_doc_root_path//$file_day_relpath:$(echo $(cat $dir_doc_root_path/$file_day_relpath | wc -l))
+    code . --goto $file_to_open_in_ide:$(echo $(cat $file_to_open_in_ide | wc -l))
 }
 
 main "$@"

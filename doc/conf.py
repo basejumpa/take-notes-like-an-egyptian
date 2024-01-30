@@ -86,6 +86,4 @@ extlinks_detect_hardcoded_links = True
 
 extensions.append("sphinxcontrib.inkscapeconverter")
 
-# 
-
 ### EOF #######################################################################

@@ -1,4 +1,8 @@
 My Personal Notebook
 ####################
 
-And start writing.
+.. toctree::
+   :maxdepth: 2
+
+   daily-notes/index
+   other-notes/index
