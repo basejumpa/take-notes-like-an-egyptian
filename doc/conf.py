@@ -33,6 +33,7 @@ if html_theme == "sphinx_material":
         "globaltoc_depth"         : 3,
         "globaltoc_collapse"      : "true",
         "globaltoc_includehidden" : "true",
+        
     }
     
     html_sidebars = {
@@ -76,7 +77,7 @@ plantuml_output_format = "svg"
 extensions.append("sphinx.ext.extlinks")
 
 extlinks = {
-    'issue': ('https://jira.mycompany.com/browse/%s','%s'),
+    "issue": ("https://jira.mycompany.com/browse/%s","%s"),
 }
 
 extlinks_detect_hardcoded_links = True
@@ -85,5 +86,16 @@ extlinks_detect_hardcoded_links = True
 # @see https://pypi.org/project/sphinxcontrib-svg2pdfconverter/
 
 extensions.append("sphinxcontrib.inkscapeconverter")
+
+### Add other markdown formats other than .rst  ##############################
+# @see https://www.sphinx-doc.org/en/master/usage/markdown.html
+
+extensions.append("myst_parser")
+
+source_suffix = {
+    #""      : "restructuredtext",
+    ".rst"  : "restructuredtext",
+    ".md"   : "markdown",
+}
 
 ### EOF #######################################################################

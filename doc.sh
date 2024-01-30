@@ -37,7 +37,19 @@ function install() {
 }
 
 function preview() {
+    # Clean
+    rm -rf build/html
+    mkdir build/html
+    # Start continuous build, open browser automatically which reloads on change.
     python -m pipenv run sphinx-autobuild doc build/html --port 1440 --open-browser
+}
+
+function build() {
+    # Clean
+    rm -rf build/html
+    mkdir build/html
+    # Build
+    python -m pipenv run sphinx doc build/html
 }
 
 function make-my-day() {
