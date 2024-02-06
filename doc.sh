@@ -33,7 +33,7 @@ function install() {
     rm -rf .venv
     mkdir .venv
     python -m pipenv install --no-site-packages --dev
-    curl -o .venv/plantuml.jar https://github.com/plantuml/plantuml/releases/download/v1.2023.13/plantuml-1.2023.13.jar
+    curl -L -o .venv/plantuml.jar https://github.com/plantuml/plantuml/releases/download/v1.2024.0/plantuml-1.2024.0.jar
 }
 
 function preview() {
