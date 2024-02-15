@@ -1,0 +1,7 @@
+@startuml
+A ->  B  : hello()
+activate B
+B ->  B  : think()
+A <<- B  : return "hi"
+deactivate B
+@enduml

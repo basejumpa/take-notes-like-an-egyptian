@@ -1,7 +1,14 @@
 {
     "recommendations": [
+    	// Syntax highlighting etc.
+    	"lextudio.restructuredtext",
+	"trond-snekvik.simple-rst",
+    
         // Paste image from clipboard into markdown
         "dendron.dendron-paste-image",
+	
+	// Let VScode understand .editorconfig file
+	"editorconfig.editorconfig",
 
         // Integrate Draw.io into VS Code.
         "hediet.vscode-drawio",
@@ -11,9 +18,15 @@
 
         // View a Git Graph of your repository, and perform Git actions from the graph
         "mhutchie.git-graph",
+	
+	// Atlassian JIRA and Bitbucket: Tickets and Pull-Requests directly in your IDE
+	"atlassian.atlascode",
 
         // Automatically turn text into links based upon regex patterns.
         "danlevett.pattern-links",
+	
+	// Nice icons at files and folders
+	"vscode-icons-team.vscode-icons",
 
         // Subtly change the workspace color of your workspace. Ideal when you have multiple VS Code instances and you want to quickly identify which is which.
         "johnpapa.vscode-peacock"

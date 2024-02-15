@@ -1,0 +1,77 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "preview",
+            "type": "shell",
+            "windows": {
+                "command": "make -f docs/Makefile preview"
+            },
+            "problemMatcher": [
+                {
+                  "owner": "sphinx",
+                  "fileLocation": "absolute",
+                  "pattern": {
+                    "regexp": "^(?:.*\\.{3}\\s+)?(\\/[^:]*|[a-zA-Z]:\\\\[^:]*):(\\d+):\\s+(WARNING|ERROR):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "severity": 3,
+                    "message": 4
+                  }
+                },
+                {
+                "owner": "sphinx",
+                  "fileLocation": "absolute",
+                  "pattern": {
+                    "regexp": "^(?:.*\\.{3}\\s+)?(\\/[^:]*|[a-zA-Z]:\\\\[^:]*):{1,2}\\s+(WARNING|ERROR):\\s+(.*)$",
+                    "file": 1,
+                    "severity": 2,
+                    "message": 3
+                  }
+                }
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "html",
+            "type": "shell",
+            "windows": {
+                "command": "make -f docs/Makefile html"
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            }
+        },
+        {
+            "label": "pdf",
+            "type": "shell",
+            "windows": {
+                "command": "make -f docs/Makefile pdf"
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            }
+        },
+        {
+            "label": "publish",
+            "type": "shell",
+            "windows": {
+                "command": ".\\publish.bat"
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            }
+        }
+    ]
+}
