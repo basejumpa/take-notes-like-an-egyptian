@@ -1,4 +1,4 @@
-# Take Notes Like An Egyption
+# Take Notes Like An Egyptian
 
 - Use Visual Studio Code as your typewriter.
 - Use Sphinx ecosystem as "digital printshop".
